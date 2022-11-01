@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("comic-sans.ttf");
+}
+
 body {
   background-color: white;
   font-family: Comic Sans MS;
@@ -89,6 +94,38 @@ body {
   background-color: white;
 }
 
+.marquee-animation {
+  text-align: left;
+  animation: 15s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(calc(100% - 200px));
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 @media (min-width: 600px) {
   .ratcards { grid-template-columns: repeat(2, 1fr); }
 }
+
+
+@media screen and (orientation: portrait) {
+  body {
+    margin: 0;
+  }
+  .cards{
+    padding: 0;
+  }
+  .content {
+    padding: 0;
+  }
+}
+
