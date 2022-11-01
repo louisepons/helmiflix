@@ -1,9 +1,4 @@
 
-@font-face {
-  font-family: 'Comic Sans MS';
-  src: url("comic-sans.ttf");
-}
-
 body {
   background-color: white;
   font-family: Comic Sans MS;
